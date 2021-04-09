@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/game.css">
+    <title> The game of the Calculator </title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="start screen active">   
+            <p> Starting in : &nbsp;</p>         
+            <div class="counter-start">
+                5
+            </div>
+        </div>
+        <div class="calculator-game screen">
+            <div class="calculator">
+                <div class="option-general">                    
+                    <button id="return"> Return to the Main Page </button>
+                    <button id="start-again">Start Again</button>
+                </div>
+
+                <div class="main-panel">
+                    <div class="counter-time">
+                        
+                    </div>
+                    <div class="math-problem">
+                        <p id="problem"></p>
+                        <p id="response"></p>
+                    </div>
+                    <div class="question-number">
+                        #1
+                    </div>
+                </div>
+                <div class="keyboard">
+                    <button class="key" id="btn-9">9</button>
+                    <button class="key" id="btn-8">8</button>
+                    <button class="key" id="btn-7">7</button>
+                    <button class="key" id="btn-6">6</button>
+                    <button class="key" id="btn-5">5</button>
+                    <button class="key" id="btn-4">4</button>
+                    <button class="key" id="btn-3">3</button>
+                    <button class="key" id="btn-2">2</button>
+                    <button class="key" id="btn-1">1</button>
+                    <button class="key" id="btn-erase">Erase</button>
+                    <button class="key" id="btn-0">0</button>
+                    <button class="key" id="btn-enter">Enter</button>
+                </div>
+            </div>
+        </div>
+        <div class="results screen">
+            <div class="about-questions">
+                <div class="section-question">
+                    <h3> Total Question's Number </h3>
+                    <p id="total"></p>
+                </div>
+                <div class="section-question">
+                    <h3> Correct Question's Number: </h3>
+                    <p id="corrects"></p>
+                </div>
+                <div class="section-question">
+                    <h3> Incorrect Question's Number: </h3>
+                    <p id="incorrects"></p>
+                </div>
+            </div>
+
+            <div class="score">
+                Final Score : <h2></h2>
+            </div>
+
+        </div>
+    </div>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
