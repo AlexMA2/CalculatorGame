@@ -7,27 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/game.css">
     <link rel="shortcut icon" href="res/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title> The game of the Calculator </title>
 </head>
 
 <body>
     <div class="container-fluid">
-        <div class="start screen active">   
-            <p> Starting in : &nbsp;</p>         
+        <div class="start screen active">
+            <p> Starting in : &nbsp;</p>
             <div class="counter-start">
                 5
             </div>
         </div>
         <div class="calculator-game screen">
             <div class="calculator">
-                <div class="option-general">                    
+                <div class="option-general">
                     <button id="return"> Return to the Main Page </button>
                     <button id="start-again">Start Again</button>
                 </div>
 
                 <div class="main-panel">
                     <div class="counter-time">
-                        
+
                     </div>
                     <div class="math-problem">
                         <p id="problem"></p>
@@ -54,29 +55,85 @@
             </div>
         </div>
         <div class="results screen">
-            <div class="about-questions">
-                <div class="section-question">
-                    <h3> Total Number of Questions : </h3>
-                    <p id="total"></p>
-                </div>
-                <div class="section-question">
-                    <h3> Correct Number of Question : </h3>
-                    <p id="corrects"></p>
-                </div>
-                <div class="section-question">
-                    <h3> Incorrect Number Question : </h3>
-                    <p id="incorrects"></p>
+            <div class="specification in-left">               
+                <div class="paper">
+                    <div class="title-table">
+                        <h2> Details </h2>
+                    </div>
+                    <table cellspacing="0" id="table-details">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Math Problem</th>
+                                <th>Your Answer</th>
+                                <th>Correct Answer</th>
+                                <th>Result</th>                                
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
                 </div>
             </div>
+            <div class="container-results">
+                <div class="option-general">
+                    <button class="return"> Return to the Main Page </button>
+                    <button class="start-again">Start Again</button>
+                </div>
+                <div class="about-questions">
+                    <div class="section-question" id="first">
+                        <h3> Total Number of Questions : </h3>
+                        <p id="total"></p>
+                    </div>
+                    <div class="section-question" id="second">
+                        <h3> Correct Number of Question : </h3>
+                        <p id="corrects"></p>
+                    </div>
+                    <div class="section-question" id="third">
+                        <h3> Incorrect Number Question : </h3>
+                        <p id="incorrects"></p>
+                    </div>
+                </div>
 
-            <div class="score">
-                Final Score : <h2></h2>
+                <div class="score">
+                    <h1> Final Score </h1>
+                    <h2 id="score-id">0</h2>
+                </div>
             </div>
-
+            <div class="specification in-right">               
+                <div class="paper">
+                    <div class="title-table">
+                        <h2> Ranking </h2>
+                    </div>
+                    <table cellspacing="0" id="table-ranking">
+                        <thead>
+                            <tr>
+                                <th>Position</th>
+                                <th>Name</th>
+                                <th>Points</th>
+                                <th>Correct Answer</th>
+                                <th>Result</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="scripts/app.js"></script>
+    <script src="scripts/controls.js"></script>
 </body>
 
 </html>
