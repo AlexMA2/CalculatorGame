@@ -1,6 +1,6 @@
 $(function () {
     let counterStart = 5;
-    let time = 10;
+    let time = 60;
     let numQuestion = 1;
 
     let questions = [];
