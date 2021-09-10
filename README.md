@@ -1,48 +1,39 @@
-1. [General Info](#general-info)
-2. [Technologies](#technologies)
-3. [Installation](#installation)
-4. [Collaboration](#collaboration)
-5. [FAQs](#faqs)
-### General Info
-***
-Write down the general informations of your project. It is worth to always put a project status in the Readme file. This is where you can add it. 
-### Screenshot
-![Image text](https://www.united-internet.de/fileadmin/user_upload/Brands/Downloads/Logo_IONOS_by.jpg)
-## Technologies
-***
-A list of technologies used within the project:
-* [Technologie name](https://example.com): Version 12.3 
-* [Technologie name](https://example.com): Version 2.34
-* [Library name](https://example.com): Version 1234
-## Installation
-***
-A little intro about the installation. 
+
+# El Juego de la Calculadora
+
+Es una pequeña app web donde puedes jugar a resolver simples ejercicios matemáticos como 
+sumas, restas, multiplicaciones y divisiones. Resuelve las más que puedas en 60 segundos 
+para conseguir puntos. 
+
+Mejora tu velocidad de cálculo de forma divertida con este juego.
+
+
+
+
+## ¿Cómo ejecutar este proyecto?
+
+Abre una terminal y situate en una carpeta vacía. Luego, escribe los siguientes comandos
+
+```bash
+ git clone https://github.com/AlexMA2/CalculatorGame.git
+ cd CalculatorGame
+ code . // Solo si usas Visual Studio Code, de otro modo, abrelo manualmente 
 ```
-$ git clone https://example.com
-$ cd ../path/to/the/file
-$ npm install
-$ npm start
-```
-Side information: To use the application in a special environment use ```lorem ipsum``` to start
-## Collaboration
-***
-Give instructions on how to collaborate with your project.
-> Maybe you want to write a quote in this part. 
-> It should go over several rows?
-> This is how you do it.
-## FAQs
-***
-A list of frequently asked questions
-1. **This is a question in bold**
-Answer of the first question with _italic words_. 
-2. __Second question in bold__ 
-To answer this question we use an unordered list:
-* First point
-* Second Point
-* Third point
-3. **Third question in bold**
-Answer of the third question with *italic words*.
-4. **Fourth question in bold**
-| Headline 1 in the tablehead | Headline 2 in the tablehead | Headline 3 in the tablehead |
-|:--------------|:-------------:|--------------:|
-| text-align left | text-align center | text-align right |
+
+  Abre el archivo index.html en un navegador o utiliza la extensión de Visual Studio Code
+  conocida como Live Server.
+
+
+## Contribuciones
+
+Las constribuciones son bienvenidas!
+
+Algunos de las cosas que faltan por implementar serían:
+
+- Implementación de un mejor sistema de puntuación basado en la dificultad de la operación, velocidad de respuesta y racha de aciertos.
+- Cambiar el tiempo total para las respuestas.
+- Implementar Firebase para el registro de las puntuaciones
+- Crear un ranking con las mejores 20 puntuaciones y otro con las últimas 20 puntuaciones
+- Mejorar el rendimiento de la página.
+
+  
