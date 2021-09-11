@@ -67,7 +67,7 @@ body {
 /* Game Styles */
 
 .calculator-game {
-    background-image: url("../res/background-game.jpg");
+    background-image: url("../assets/background-game.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -199,7 +199,7 @@ body {
 /* Results Styles */
 
 .results {
-    background-image: url("../res/background-game.jpg");
+    background-image: url("../assets/background-game.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -309,7 +309,7 @@ body {
 }
 
 .paper {
-    display: none;
+    display: block;
     background-color: #fff;
     width: auto;
     max-width: 400px;
@@ -383,3 +383,10 @@ body {
 .fa-times {
     color: #dd1f11
 }
+
+.slideDown {
+    transition: height 1s;
+    height: 0;
+    overflow: hidden;
+}
+
