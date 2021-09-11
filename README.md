@@ -35,5 +35,5 @@ Algunos de las cosas que faltan por implementar serían:
 - Implementar Firebase para el registro de las puntuaciones
 - Crear un ranking con las mejores 20 puntuaciones y otro con las últimas 20 puntuaciones
 - Mejorar el rendimiento de la página.
-
+- Crear un diseño adaptable
   
