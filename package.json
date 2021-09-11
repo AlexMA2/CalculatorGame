@@ -1,0 +1,32 @@
+{
+  "name": "calculatorgame",
+  "version": "0.3.0",
+  "private": true,
+  "scripts": {
+    "lint": "standard",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "postinstall": "git config core.hooksPath ./git-hooks"
+  },
+  "devDependencies": {
+    "postcss-cli": "^8.3.1",
+    "postcss-nesting": "^8.0.1",
+    "standard": "16.0.3",
+    "vite": "2.5.0"
+  },
+  "dependencies": {
+    "hotkeys-js": "3.8.7",
+    "zustand": "3.5.10"
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/standard/eslintrc.json"
+    ]
+  },
+  "postcss": {
+    "plugins": {
+      "postcss-nesting": {}
+    }
+  }
+}
