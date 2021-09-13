@@ -9,7 +9,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
+    min-height: 90vh;
 }
 
 .btns-home {
@@ -20,9 +21,9 @@ body {
     flex-wrap: nowrap;
     & a {
         border: 1px solid #005761;
-        background-color: #fff;
-        width: 10.625rem;
+        background-color: #fff;       
         height: 3.125rem;
+        width: 100%;
         font-size: 2rem;
         padding: 0.625rem;
         text-align: center;
@@ -59,7 +60,8 @@ footer {
     justify-content: center;
     font-size: 1.5rem;
     font-weight: bold;
-    position: absolute;
+    position: relative;
+    height: 10vh;
     bottom: 0;
     & p {
         color: #00167A
@@ -87,8 +89,7 @@ footer {
     .btns-home {
         & a {
             border: 1px solid #005761;
-            background-color: #fff;
-            width: 7.225rem;
+            background-color: #fff;           
             height: 2.125rem;
             font-size: 1.5rem;
             padding: 0.625rem;
