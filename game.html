@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/game.css">
+    <link rel="stylesheet" href="styles/game.css">    
+    <link rel="stylesheet" href="styles/start.css">
+    <link rel="stylesheet" href="styles/calculator.css">
+    <link rel="stylesheet" href="styles/results.css">
     <link rel="shortcut icon" href="res/icono.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title> The game of the Calculator </title>
@@ -55,11 +58,17 @@
             </div>
         </div>
         <div class="results screen">
-            <div class="specification in-left">               
+            <div class="specification in-left">
                 <div class="paper">
                     <div class="title-table">
-                        <h2> Details </h2>
+                        <h2> Details </h2>                        
                     </div>
+                    <div class="arrow-down" id="arrow-score">
+                        <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m.5 4.5 4-4 4 4" fill="none" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" transform="translate(6 8)" />
+                        </svg>
+                    </div>                    
                     <table cellspacing="0" id="table-details">
                         <thead>
                             <tr>
@@ -67,12 +76,12 @@
                                 <th>Math Problem</th>
                                 <th>Your Answer</th>
                                 <th>Correct Answer</th>
-                                <th>Result</th>                                
+                                <th>Result</th>
                             </tr>
 
                         </thead>
                         <tbody>
-                            
+
                         </tbody>
                     </table>
                 </div>
@@ -102,18 +111,22 @@
                     <h2 id="score-id">0</h2>
                 </div>
             </div>
-            <div class="specification in-right">               
+            <div class="specification in-right">
                 <div class="paper">
                     <div class="title-table">
-                        <h2> Ranking </h2>
+                        <h2> Ranking </h2>                        
                     </div>
+                    <div class="arrow-down"  id="arrow-ranking">
+                        <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m.5 4.5 4-4 4 4" fill="none" stroke="currentColor" stroke-linecap="round"
+                                stroke-linejoin="round" transform="translate(6 8)" />
+                        </svg>
+                    </div> 
                     <table cellspacing="0" id="table-ranking">
                         <thead>
                             <tr>
                                 <th>Position</th>
-                                <th>Name</th>
-                                <th>Points</th>
-                                <th>Correct Answer</th>
+                                <th>Name</th>                                
                                 <th>Result</th>
                             </tr>
                         </thead>
@@ -121,9 +134,7 @@
                             <tr>
                                 <td></td>
                                 <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
+                                <td></td>                                
                             </tr>
                         </tbody>
                     </table>
@@ -131,8 +142,8 @@
             </div>
         </div>
     </div>
-    
-    <script type="module" src="src/app.js"></script>    
+
+    <script type="module" src="src/app.js"></script>
 </body>
 
 </html>

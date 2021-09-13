@@ -17,13 +17,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
     & a {
         border: 1px solid #005761;
         background-color: #fff;
-        width: 170px;
-        height: 50px;
-        font-size: 30px;
-        padding: 10px;
+        width: 10.625rem;
+        height: 3.125rem;
+        font-size: 2rem;
+        padding: 0.625rem;
         text-align: center;
         line-height: 50px;
         text-decoration: none;
@@ -45,18 +46,18 @@ body {
     font-family: 'Playfair Display', serif;
     letter-spacing: 0.5rem;
     font-weight: 600;
-    color: #00167A
+    color: #00167A;
+    text-align: center;
 }
 
 footer {
     width: 100%;   
     background-color: #91A6FF;
-    display: flex;
-    
+    display: flex;    
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: bold;
     position: absolute;
     bottom: 0;
@@ -64,9 +65,65 @@ footer {
         color: #00167A
     }
     & a {
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: bold;
         color: rgb(144, 38, 243);
         padding-left: 12px;        
+    }
+}
+
+
+@media (max-width: 1308px) {
+    .title {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .title {
+        font-size: 4.5rem;
+    }
+
+    .btns-home {
+        & a {
+            border: 1px solid #005761;
+            background-color: #fff;
+            width: 7.225rem;
+            height: 2.125rem;
+            font-size: 1.5rem;
+            padding: 0.625rem;
+            text-align: center;
+            line-height: 2.125rem;
+            text-decoration: none;
+            color: #005761;
+            margin-top: 20px;
+            border-radius: 5px;            
+        }
+    }   
+}
+
+@media (max-width: 500px) {
+    .title {
+        font-size: 3rem;
+    }
+    footer {
+        flex-direction: column;
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 300px) {
+    .title {
+        font-size: 2rem;
+    }
+    footer {              
+        & p {
+            font-size: 1rem;
+        }
+        & a {
+            font-size: 0.75rem;           
+        }
     }
 }
