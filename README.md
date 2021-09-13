@@ -31,9 +31,6 @@ Las constribuciones son bienvenidas!
 Algunos de las cosas que faltan por implementar serían:
 
 - Implementación de un mejor sistema de puntuación basado en la dificultad de la operación, velocidad de respuesta y racha de aciertos.
-- Cambiar el tiempo total para las respuestas.
 - Implementar Firebase para el registro de las puntuaciones
 - Crear un ranking con las mejores 20 puntuaciones y otro con las últimas 20 puntuaciones
-- Mejorar el rendimiento de la página.
-- Crear un diseño adaptable
   
