@@ -1,0 +1,43 @@
+.form-name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.form-input {    
+    width: 100%
+}
+
+.form-input label {
+        background-color: #FF88DC;
+        font-size: 1.5rem;
+        position: relative;
+        top: 14px;
+        left: 13px;
+    }
+
+.input-text {
+    width: 250px;    
+    border: 1px solid #0c0c0c;
+    border-radius: 5px;
+    padding: 1rem 0.5rem;
+    background: none
+}
+
+.input-text input {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 1rem;
+    }
+
+#language {
+    width: 100%;
+    border: 1px solid #0c0c0c;
+    border-radius: 5px;
+    padding: 1rem 0.5rem;
+    background: none;
+    cursor: pointer;
+}

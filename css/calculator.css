@@ -1,0 +1,131 @@
+
+.calculator-game {
+    background-image: url("../assets/background-game.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-clip: content-box;
+}
+
+.calculator {
+    width: 1400px;
+    height: 600px;
+    background-color: #E4DFD2;
+    border-radius: 50px;
+    border: 2px solid #c0bcb1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.option-general {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 15px 15px 0 0
+}
+
+.option-general button {
+        width: 200px;
+        height: 70px;
+        font-size: 18px;
+        padding: 15px;
+        font-weight: 700;
+        border-radius: 20px;
+        outline: none;
+        background-color: #0a0a0a;
+        box-shadow: 5px 5px 10px #cacaca;
+        color: #fff;
+        cursor: pointer
+    }
+
+.option-general button:hover {
+            background-color: #242424;
+            box-shadow: 5px 5px 10px #868585;
+            transition: all 0.5s;
+        }
+
+.main-panel {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.counter-time {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ffaa00;
+    text-align: center;
+    line-height: 100px;
+    font-size: 50px;
+    text-shadow: 2px 2px #89898a;
+    border: 3px solid #f3bd51;
+    font-weight: 700;
+    margin-right: 90px;
+}
+
+.math-problem {
+    width: 35%;
+    height: 60px;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    text-align: center;
+    line-height: 50px;
+    font-size: 50px;
+    margin-left: 98px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px
+
+}
+
+.math-problem p {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+.question-number {
+    width: 150px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 40px;
+    background-color: #a9e4ee;
+    padding: 5px 30px;
+    border-radius: 7px;
+    border-top: 5px solid #f0b5ec;
+    border-right: 5px solid #f0b5ec;
+}
+
+.keyboard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 300px;
+}
+
+.key {
+    width: 32%;
+    border: 2px solid #0a0a0a;
+    margin: 1px;
+    background-color: #f8e0d3;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.key:hover {
+        background-color: #ecc6b2;
+        transition: all 0.3s;
+        font-weight: 700;
+    }

@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "postinstall": "git config core.hooksPath ./git-hooks"
+    "postinstall": "git config core.hooksPath ./git-hooks",
+    "postcss": "postcss styles --dir css"
   },
   "devDependencies": {
     "postcss-cli": "^8.3.1",
