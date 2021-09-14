@@ -17,8 +17,7 @@
     "vite": "2.5.0"
   },
   "dependencies": {
-    "hotkeys-js": "3.8.7",
-    "zustand": "3.5.10"
+    
   },
   "eslintConfig": {
     "extends": [
