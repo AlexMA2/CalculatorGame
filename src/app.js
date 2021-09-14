@@ -2,8 +2,8 @@ import { $, $$ } from './utils/dom'
 import './controls'
 import './arrow'
 
-let counterStart = 5
-let time = 30
+let counterStart = 1
+let time = 1
 let numQuestion = 1
 
 const questions = []
@@ -148,7 +148,6 @@ $('body').addEventListener('keydown', function (ev) {
 const checkAnswers = () => {
   let counterCorrects = 0
   for (let i = 0; i < numQuestion - 1; i++) {
-    console.log(answers[i], correctAnswers[i], answers[i] === correctAnswers[i])
     if (correctAnswers[i] === answers[i]) {
       counterCorrects = counterCorrects + 1
       resultsOfAnswers[i] = 1
@@ -237,7 +236,6 @@ const incorrectIcon = '<svg id="incorrect" height="30" viewBox="0 0 21 21" width
 
 const createTableDetails = () => {
   let tbody = ''
-  console.log(resultsOfAnswers)
   for (let i = 0; i < numQuestion - 1; i++) {
     if (resultsOfAnswers[i] === 0) {
       tbody += createRowInTable(i + 1, questions[i].slice(0, -2), parseInt(answers[i]), correctAnswers[i], incorrectIcon)

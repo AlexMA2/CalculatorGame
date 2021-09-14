@@ -25,8 +25,8 @@
         <div class="calculator-game screen">
             <div class="calculator">
                 <div class="option-general">
-                    <button id="return"> Return to the Main Page </button>
-                    <button id="start-again">Start Again</button>
+                    <button class="return"> Return to the Main Page </button>
+                    <button class="start-again">Start Again</button>
                 </div>
 
                 <div class="main-panel">
@@ -60,7 +60,7 @@
         <div class="results screen">
             <div class="specification in-left">
                 <div class="paper">
-                    <div class="title-table">
+                    <div class="title-table" id="title-table-details">
                         <h2> Details </h2>
                     </div>
                     <div class="arrow-down" id="arrow-score">
@@ -113,7 +113,7 @@
             </div>
             <div class="specification in-right">
                 <div class="paper">
-                    <div class="title-table">
+                    <div class="title-table" id="title-table-ranking">
                         <h2> Ranking </h2>
                     </div>
                     <div class="arrow-down" id="arrow-ranking">
@@ -142,7 +142,35 @@
             </div>
         </div>
     </div>
+    <script type="module">
+        import { $, $$ } from './src/utils/dom'
+        import { changeLanguage, init } from './i18n/index'
+        let l = changeLanguage(init())
+        $('.start p').innerText = l.game.start
+        let {calculator, results} = l.game
+        $$('.return').forEach(element => {
+            element.innerText = calculator.btnReturn
+        })
+        $$('.start-again').forEach(element => {
+            element.innerText = calculator.btnStartAgain
+        })
+  
+        $('#btn-erase').innerText = calculator.btnErase
+        $('#btn-enter').innerText = calculator.btnEnter
+        $('#title-table-details h2').innerText = results.details.title
+        $$('#table-details thead tr th').forEach((th, index) => {
+            if (index !== 0) th.innerText = results.details.details[index - 1]
+        })
+        $('#title-table-ranking h2').innerText = results.ranking.title
 
+        $$('#table-ranking thead tr th').forEach((th, index) => {           
+            th.innerText = results.ranking.ranking[index]
+        })
+        $$('.section-question h3').forEach((h3, index) => {
+            h3.innerText = results.explanation[index]
+        })
+        $('.score h1').innerText = results.explanation[3]
+    </script>
     <script type="module" src="./src/app.js"></script>
 </body>
 

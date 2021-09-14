@@ -1,13 +1,15 @@
 import { changeLanguage, init } from '../i18n/index'
 import { $, $$ } from './utils/dom'
 
+$('#nick').value = window.localStorage.getItem('nick') || ''
+
 $('#btn-start').addEventListener('click', (ev) => {
   ev.preventDefault()
-  const nick = $('#nick').innerText
+  const nick = $('#nick').value
   if (nick.length === 0) {
     window.alert('Please enter a nickname')
   } else {
-    window.sessionStorage.setItem('nick', nick)
+    window.localStorage.setItem('nick', nick)
     window.location.href = '/game.html'
   }
 })
