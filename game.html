@@ -1,177 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/game.css" />
+    <link rel="stylesheet" href="css/start.css" />
+    <link rel="stylesheet" href="css/calculator.css" />
+    <link rel="stylesheet" href="css/results.css" />
+    <link rel="shortcut icon" href="res/icono.png" type="image/x-icon" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/game.css">
-    <link rel="stylesheet" href="css/start.css">
-    <link rel="stylesheet" href="css/calculator.css">
-    <link rel="stylesheet" href="css/results.css">
-    <link rel="shortcut icon" href="res/icono.png" type="image/x-icon">
+    <title>The game of the Calculator</title>
+  </head>
 
-    <title> The game of the Calculator </title>
-</head>
-
-<body>
+  <body>
     <div class="container-fluid">
-        <div class="start screen active">
-            <p> Starting in : &nbsp;</p>
-            <div class="counter-start">
-                <p>5</p>
-            </div>
+      <div class="start screen active">
+        <p>Starting in : &nbsp;</p>
+        <div class="counter-start">
+          <p>5</p>
         </div>
-        <div class="calculator-game screen">
-            <div class="calculator">
-                <div class="option-general">
-                    <button class="return"> Return to the Main Page </button>
-                    <button class="start-again">Start Again</button>
-                </div>
+      </div>
+      <div class="calculator-game screen">
+        <div class="calculator">
+          <div class="option-general">
+            <button class="return">Return to the Main Page</button>
+            <button class="start-again">Start Again</button>
+          </div>
 
-                <div class="main-panel">
-                    <div class="counter-time">
-
-                    </div>
-                    <div class="math-problem">
-                        <p id="problem"></p>
-                        <p id="response"></p>
-                    </div>
-                    <div class="question-number">
-                        #1
-                    </div>
-                </div>
-                <div class="keyboard">
-                    <button class="key" id="btn-9">9</button>
-                    <button class="key" id="btn-8">8</button>
-                    <button class="key" id="btn-7">7</button>
-                    <button class="key" id="btn-6">6</button>
-                    <button class="key" id="btn-5">5</button>
-                    <button class="key" id="btn-4">4</button>
-                    <button class="key" id="btn-3">3</button>
-                    <button class="key" id="btn-2">2</button>
-                    <button class="key" id="btn-1">1</button>
-                    <button class="key" id="btn-erase">Erase</button>
-                    <button class="key" id="btn-0">0</button>
-                    <button class="key" id="btn-enter">Enter</button>
-                </div>
+          <div class="main-panel">
+            <div class="counter-time"></div>
+            <div class="math-problem">
+              <p id="problem"></p>
+              <p id="response"></p>
             </div>
+            <div class="question-number">#1</div>
+          </div>
+          <div class="keyboard">
+            <button class="key" id="btn-9">9</button>
+            <button class="key" id="btn-8">8</button>
+            <button class="key" id="btn-7">7</button>
+            <button class="key" id="btn-6">6</button>
+            <button class="key" id="btn-5">5</button>
+            <button class="key" id="btn-4">4</button>
+            <button class="key" id="btn-3">3</button>
+            <button class="key" id="btn-2">2</button>
+            <button class="key" id="btn-1">1</button>
+            <button class="key" id="btn-erase">Erase</button>
+            <button class="key" id="btn-0">0</button>
+            <button class="key" id="btn-enter">Enter</button>
+          </div>
         </div>
-        <div class="results screen">
-            <div class="specification in-left">
-                <div class="paper">
-                    <div class="title-table" id="title-table-details">
-                        <h2> Details </h2>
-                    </div>
-                    <div class="arrow-down" id="arrow-score">
-                        <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
-                            <path d="m.5 4.5 4-4 4 4" fill="none" stroke="currentColor" stroke-linecap="round"
-                                stroke-linejoin="round" transform="translate(6 8)" />
-                        </svg>
-                    </div>
-                    <table cellspacing="0" id="table-details">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Math Problem</th>
-                                <th>Your Answer</th>
-                                <th>Correct Answer</th>
-                                <th>Result</th>
-                            </tr>
-
-                        </thead>
-                        <tbody>
-
-                        </tbody>
-                    </table>
-                </div>
+      </div>
+      <div class="results screen">
+        <div class="specification in-left">
+          <div class="paper">
+            <div class="title-table" id="title-table-details">
+              <h2>Details</h2>
             </div>
-            <div class="container-results">
-                <div class="option-general">
-                    <button class="return"> Return to the Main Page </button>
-                    <button class="start-again">Start Again</button>
-                </div>
-                <div class="about-questions">
-                    <div class="section-question" id="first">
-                        <h3> Total Number of Questions : </h3>
-                        <p id="total"></p>
-                    </div>
-                    <div class="section-question" id="second">
-                        <h3> Correct Number of Question : </h3>
-                        <p id="corrects"></p>
-                    </div>
-                    <div class="section-question" id="third">
-                        <h3> Incorrect Number Question : </h3>
-                        <p id="incorrects"></p>
-                    </div>
-                </div>
-
-                <div class="score">
-                    <h1> Final Score </h1>
-                    <h2 id="score-id">0</h2>
-                </div>
+            <div class="arrow-down" id="arrow-score">
+              <svg
+                height="21"
+                viewBox="0 0 21 21"
+                width="21"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m.5 4.5 4-4 4 4"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  transform="translate(6 8)"
+                />
+              </svg>
             </div>
-            <div class="specification in-right">
-                <div class="paper">
-                    <div class="title-table" id="title-table-ranking">
-                        <h2> Ranking </h2>
-                    </div>
-                    <div class="arrow-down" id="arrow-ranking">
-                        <svg height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg">
-                            <path d="m.5 4.5 4-4 4 4" fill="none" stroke="currentColor" stroke-linecap="round"
-                                stroke-linejoin="round" transform="translate(6 8)" />
-                        </svg>
-                    </div>
-                    <table cellspacing="0" id="table-ranking">
-                        <thead>
-                            <tr>
-                                <th>Position</th>
-                                <th>Name</th>
-                                <th>Result</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+            <table cellspacing="0" id="table-details">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Math Problem</th>
+                  <th>Your Answer</th>
+                  <th>Correct Answer</th>
+                  <th>Result</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
         </div>
+        <div class="container-results">
+          <div class="option-general">
+            <button class="return">Return to the Main Page</button>
+            <button class="start-again">Start Again</button>
+          </div>
+          <div class="about-questions">
+            <div class="section-question" id="first">
+              <h3>Total Number of Questions :</h3>
+              <p id="total"></p>
+            </div>
+            <div class="section-question" id="second">
+              <h3>Correct Number of Question :</h3>
+              <p id="corrects"></p>
+            </div>
+            <div class="section-question" id="third">
+              <h3>Incorrect Number Question :</h3>
+              <p id="incorrects"></p>
+            </div>
+          </div>
+
+          <div class="score">
+            <h1>Final Score</h1>
+            <h2 id="score-id">0</h2>
+          </div>
+        </div>
+        <div class="specification in-right">
+          <div class="paper">
+            <div class="title-table" id="title-table-ranking">
+              <h2>Ranking</h2>
+            </div>
+            <div class="arrow-down" id="arrow-ranking">
+              <svg
+                height="21"
+                viewBox="0 0 21 21"
+                width="21"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m.5 4.5 4-4 4 4"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  transform="translate(6 8)"
+                />
+              </svg>
+            </div>
+            <table cellspacing="0" id="table-ranking">
+              <thead>
+                <tr>
+                  <th>Position</th>
+                  <th>Name</th>
+                  <th>Result</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
     <script type="module">
-        import { $, $$ } from './src/utils/dom'
-        import { changeLanguage, init } from './i18n/index'
-        let l = changeLanguage(init())
-        $('.start p').innerText = l.game.start
-        let {calculator, results} = l.game
-        $$('.return').forEach(element => {
-            element.innerText = calculator.btnReturn
-        })
-        $$('.start-again').forEach(element => {
-            element.innerText = calculator.btnStartAgain
-        })
-  
-        $('#btn-erase').innerText = calculator.btnErase
-        $('#btn-enter').innerText = calculator.btnEnter
-        $('#title-table-details h2').innerText = results.details.title
-        $$('#table-details thead tr th').forEach((th, index) => {
-            if (index !== 0) th.innerText = results.details.details[index - 1]
-        })
-        $('#title-table-ranking h2').innerText = results.ranking.title
+      import { $, $$ } from "./src/utils/dom.js";
+      import { changeLanguage, init } from "./i18n/index.js";
+      let l = changeLanguage(init());
+      $(".start p").innerText = l.game.start;
+      let { calculator, results } = l.game;
+      $$(".return").forEach((element) => {
+        element.innerText = calculator.btnReturn;
+      });
+      $$(".start-again").forEach((element) => {
+        element.innerText = calculator.btnStartAgain;
+      });
 
-        $$('#table-ranking thead tr th').forEach((th, index) => {           
-            th.innerText = results.ranking.ranking[index]
-        })
-        $$('.section-question h3').forEach((h3, index) => {
-            h3.innerText = results.explanation[index]
-        })
-        $('.score h1').innerText = results.explanation[3]
+      $("#btn-erase").innerText = calculator.btnErase;
+      $("#btn-enter").innerText = calculator.btnEnter;
+      $("#title-table-details h2").innerText = results.details.title;
+      $$("#table-details thead tr th").forEach((th, index) => {
+        if (index !== 0) th.innerText = results.details.details[index - 1];
+      });
+      $("#title-table-ranking h2").innerText = results.ranking.title;
+
+      $$("#table-ranking thead tr th").forEach((th, index) => {
+        th.innerText = results.ranking.ranking[index];
+      });
+      $$(".section-question h3").forEach((h3, index) => {
+        h3.innerText = results.explanation[index];
+      });
+      $(".score h1").innerText = results.explanation[3];
     </script>
-    <script type="module" src="./src/app.js"></script>
-</body>
-
+    <script type="module" src="src/app.js"></script>
+  </body>
 </html>
