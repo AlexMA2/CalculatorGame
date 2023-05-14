@@ -1,55 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Calculator Game | Developed by Alex</title>
-    <link rel="stylesheet" href="css/form.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="shortcut icon" href="assets/icono.png" type="image/x-icon" />
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>The Calculator Game | Developed by Alex</title>
+        <link rel="stylesheet" href="css/form.css" />
+        <link rel="stylesheet" href="css/index.css" />
+        <link rel="favicon" href="assets/icono.png" type="image/x-icon" />
+    </head>
 
-  <body>
-    <div class="container-fluid">
-      <h1 class="title">The Calculator Game</h1>
-      <form action="#" class="form-name">
-        <div class="form-input">
-          <label for="name" id="nick-label"> Nick </label>
-          <div class="input-text">
-            <input
-              type="text"
-              id="nick"
-              name="nick"
-              placeholder="Your nick: "
-            />
-          </div>
+    <body>
+        <div class="container-fluid">
+            <h1 class="title">The Calculator Game</h1>
+            <form action="#" class="form-name">
+                <div class="form-input">
+                    <label for="name" id="nick-label"> Nick </label>
+                    <div class="input-text">
+                        <input type="text" id="nick" name="nick" placeholder="Your nick: " />
+                    </div>
+                </div>
+                <div class="form-input">
+                    <label for="language" id="language-label"> Language </label>
+                    <select name="language" id="language">
+                        <option value="" id="language-detail" disabled>Select a language</option>
+                        <option value="en">English</option>
+                        <option value="es">Español</option>
+                        <option value="pt">Português</option>
+                    </select>
+                </div>
+            </form>
+            <div class="btns-home">
+                <a href="game.html" id="btn-start"> Start Game </a>
+                <a href="instructions.html" id="btn-inst"> Instructions </a>
+                <a href="ranking.html" id="btn-rank"> Ranking </a>
+            </div>
         </div>
-        <div class="form-input">
-          <label for="language" id="language-label"> Language </label>
-          <select name="language" id="language">
-            <option value="" id="language-detail" disabled>
-              Select a language
-            </option>
-            <option value="en">English</option>
-            <option value="es">Español</option>
-            <option value="pt">Português</option>
-          </select>
-        </div>
-      </form>
-      <div class="btns-home">
-        <a href="game.html" id="btn-start"> Start Game </a>
-        <a href="instructions.html" id="btn-inst"> Instructions </a>
-        <a href="ranking.html" id="btn-rank"> Ranking </a>
-      </div>
-    </div>
 
-    <footer>
-      <p>Developed by Alex Mamani 2021</p>
-      <a href="https://github.com/AlexMA2/CalculatorGame" target="_blank">
-        Code in GitHub
-      </a>
-    </footer>
-    <script type="module" src="src/changes.js"></script>
-  </body>
+        <footer>
+            <p>Developed by Alex Mamani 2021</p>
+            <a href="https://github.com/AlexMA2/CalculatorGame" target="_blank"> Code in GitHub </a>
+        </footer>
+        <script type="module" src="src/changes.js"></script>
+    </body>
 </html>
